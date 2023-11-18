@@ -267,17 +267,4 @@ public class PageTest {
         paymentPage.incorrectFormat();
         assertEquals(0, getOrderCount());
     }
-
-    @Test
-    public void notInDatabase() {
-        paymentPage.debitCard();
-        paymentPage.setNumberCard(DataHelper.getNotInDatabase());
-        paymentPage.setMonthCard(DataHelper.getMonth());
-        paymentPage.setYearCard(DataHelper.getShiftedYear(3));
-        paymentPage.setHolderCard(DataHelper.getHolder());
-        paymentPage.setCvvCard(DataHelper.getDigitsThree());
-        paymentPage.clickButtonContinue();
-        paymentPage.incorrectFormat();
-        assertEquals(0, getOrderCount());
-    }
 }

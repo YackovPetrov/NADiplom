@@ -263,16 +263,4 @@ public class CreditPageTest {
         creditPage.incorrectFormat();
         assertEquals(0, getOrderCount());
     }
-    @Test
-    public void notInDatabase() {
-        creditPage.creditCard();
-        creditPage.setNumberCard(DataHelper.getNotInDatabase());
-        creditPage.setMonthCard(DataHelper.getMonth());
-        creditPage.setYearCard(DataHelper.getShiftedYear(2));
-        creditPage.setHolderCard(DataHelper.getHolder());
-        creditPage.setCvvCard(DataHelper.getDigitsThree());
-        creditPage.clickButtonContinue();
-        creditPage.incorrectFormat();
-        assertEquals(0, getOrderCount());
-    }
 }

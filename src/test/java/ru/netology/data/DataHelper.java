@@ -23,7 +23,7 @@ public class DataHelper {
     }
 
     public static String getFakeNumber() {
-        return faker.numerify("#### #### #### ####");
+        return faker.numerify("0000 0000 0000 0000");
     }
 
     public static String getDigitsThree() {
@@ -78,10 +78,5 @@ public class DataHelper {
     public static String getHolderHieroglyph() {
         return  "彼得罗夫*雅科夫";
 
-    }
-
-    public static String getNotInDatabase() {
-
-        return "0000 0000 0000 0000";
     }
 }
