@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static ru.netology.data.SQLHelper.getOrderCount;
 
 
-public class PageTest {
+public class PaymentTest {
     PaymentPage paymentPage = new PaymentPage();
     public static String url = System.getProperty("sut.url");
 
@@ -52,7 +52,7 @@ public class PageTest {
     }
 
     @Test
-    public void UnsuccessfulPurchase() {
+    public void unsuccessfulPurchase() {
         paymentPage.debitCard();
         paymentPage.setNumberCard(DataHelper.getDeclinedCard());
         paymentPage.setMonthCard(DataHelper.getMonth());

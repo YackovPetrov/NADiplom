@@ -36,7 +36,7 @@ public class CreditPageTest {
     }
 
     @Test
-    public void SuccessfulPurchase() {
+    public void successfulPurchase() {
         creditPage.creditCard();
         creditPage.setNumberCard(DataHelper.getApprovedCard());
         creditPage.setMonthCard(DataHelper.getMonth());
@@ -49,7 +49,7 @@ public class CreditPageTest {
     }
 
     @Test
-    public void UnsuccessfulPurchase() {
+    public void snsuccessfulPurchase() {
         creditPage.creditCard();
         creditPage.setNumberCard(DataHelper.getDeclinedCard());
         creditPage.setMonthCard(DataHelper.getMonth());
